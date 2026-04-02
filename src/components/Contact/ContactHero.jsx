@@ -12,7 +12,7 @@ function Contact() {
            Get in touch with our team to discuss how we can help transform your business.
 We’re here to help.
           </p>
-          <button>Get In Touch Now</button>
+          <button>Get In Touch Now pal</button>
         </div>
 
         <div className="contact-hero-image">
