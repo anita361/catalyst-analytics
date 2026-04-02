@@ -1,0 +1,142 @@
+/* SECTION */
+.portfilt-section {
+  background: #000;
+  padding: 80px 20px 40px;
+  text-align: center;
+  position: relative;
+}
+
+/* ✨ LEFT GRID DECORATION */
+.portfilt-section::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 40%;
+  width: 250px;
+  height: 250px;
+
+  background-image:
+    linear-gradient(rgba(255,255,255,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.06) 1px, transparent 1px);
+
+  background-size: 20px 20px;
+  opacity: 0.4;
+}
+
+/* HEADER */
+.portfilt-header h2 {
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.portfilt-header p {
+  color: #aaa;
+  max-width: 600px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+/* FILTER ROW */
+.portfilt-filters {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* SEARCH */
+.portfilt-filters input {
+  padding: 14px 20px;
+  width: 280px;
+  background: #0b0b0b;
+  border: 1px solid #1f1f1f;
+  border-radius: 30px;
+  color: #fff;
+  outline: none;
+  transition: 0.3s;
+}
+
+.portfilt-filters input:focus {
+  border-color: #0a84ff;
+}
+
+/* CHIP */
+.portfilt-chip {
+  padding: 12px 22px;
+  border-radius: 30px;
+  background: #0b0b0b;
+  border: 1px solid #222;
+  color: #ccc;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.portfilt-chip:hover {
+  border-color: #0a84ff;
+  color: #fff;
+}
+
+/* CLEAR BUTTON */
+.portfilt-clear {
+  padding: 12px 24px;
+  border-radius: 30px;
+  background: #0a84ff;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.portfilt-clear:hover {
+  background: #0070e0;
+}
+/* SEARCH WRAPPER */
+.portfilt-search {
+  position: relative;
+}
+
+.portfilt-search input {
+  padding: 14px 45px 14px 20px;
+  width: 280px;
+  background: #0b0b0b;
+  border: 1px solid #1f1f1f;
+  border-radius: 30px;
+  color: #fff;
+  outline: none;
+}
+
+/* 🔍 ICON */
+.search-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #0a84ff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 14px;
+}
+
+/* CHIP WITH ICON */
+.portfilt-chip {
+  padding: 12px 20px;
+  border-radius: 30px;
+  background: #0b0b0b;
+  border: 1px solid #222;
+  color: #ccc;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.portfilt-chip svg {
+  font-size: 12px;
+}

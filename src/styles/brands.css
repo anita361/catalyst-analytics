@@ -1,0 +1,27 @@
+.brands {
+  background: #000;
+  padding: 25px 0;
+  border-top: 1px solid #1a1a1a;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.brands-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  opacity: 0.7;
+}
+
+.brands img {
+  height: 28px;
+  filter: grayscale(100%);
+  transition: 0.3s ease;
+}
+
+.brands img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}

@@ -1,0 +1,93 @@
+.testimonials {
+  padding: 100px 60px;
+  background: #000;
+  color: white;
+  text-align: center;
+}
+
+.testimonials h2 {
+  margin-bottom: 50px;
+}
+
+/* slider layout */
+.slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* buttons */
+.nav-btn {
+  position: absolute;
+  background: #111;
+  border: none;
+  color: white;
+  font-size: 20px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+/* slides container */
+.slides {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  width: 80%;
+  overflow: hidden;
+}
+
+/* each card */
+.slide {
+  background: #0d0f14;
+  padding: 30px;
+  border-radius: 15px;
+  width: 300px;
+  transition: 0.4s ease;
+  opacity: 0.3;
+  transform: scale(0.9);
+}
+
+/* center active */
+.activeSlide {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* side faded */
+.prevSlide,
+.nextSlide {
+  opacity: 0.3;
+}
+
+/* quote icon */
+.quote {
+  font-size: 40px;
+  color: #1a73e8;
+}
+
+.slide p {
+  font-size: 14px;
+  color: #ccc;
+  margin: 15px 0;
+}
+
+.slide h4 {
+  color: #1a73e8;
+  margin-top: 10px;
+}
+
+.primary-btn {
+  margin-top: 40px;
+}

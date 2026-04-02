@@ -1,0 +1,127 @@
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  background: #0b0f1a;
+  color: white;
+  position: relative;
+}
+
+/* LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+}
+
+.logo-box {
+  background: white;
+  color: black;
+  padding: 5px 8px;
+  border-radius: 4px;
+}
+
+/* NAV LINKS */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-links li {
+  cursor: pointer;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #aaa;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: white;
+}
+
+/* BUTTON */
+.contact-btn {
+  display: inline-block;
+  background: #1a73e8;
+  color: white !important;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.contact-btn:hover {
+  background: #1558b0;
+}
+
+/* HAMBURGER (hidden on desktop) */
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* ========================= */
+/* 📱 TABLET & MOBILE */
+/* ========================= */
+@media (max-width: 1024px) {
+
+  .navbar {
+    padding: 15px 30px;
+  }
+
+  /* SHOW HAMBURGER */
+  .menu-toggle {
+    display: block;
+  }
+
+  /* NAV MENU (hidden by default) */
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #0b0f1a;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    display: none;
+  }
+
+  /* ACTIVE MENU */
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact-btn {
+    margin-top: 10px;
+  }
+}
+
+/* 📱 SMALL MOBILE */
+@media (max-width: 480px) {
+
+  .navbar {
+    padding: 12px 20px;
+  }
+
+  .logo {
+    font-size: 14px;
+  }
+
+  .logo-box {
+    padding: 4px 6px;
+  }
+}
